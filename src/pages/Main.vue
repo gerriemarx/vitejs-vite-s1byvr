@@ -1,9 +1,11 @@
 <script>
 import SpinResultTable from '../components/SpinResultTable.vue';
+import RouletteTable from '../components/roulette-table/roulette-table.vue';
 
 export default {
   components: {
     SpinResultTable,
+    RouletteTable,
   },
   data() {
     return {
@@ -36,5 +38,6 @@ export default {
     @keydown.enter="captureSpinResult"
   />
 
+  <RouletteTable />
   <SpinResultTable :spin-result-history="spinResultHistory" />
 </template>
